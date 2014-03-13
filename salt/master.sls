@@ -1,5 +1,9 @@
 {% from "salt/package-map.jinja" import pkgs with context %}
 
+git-python:
+  pkg.installed:
+    - name: {{ pkgs['git-python'] }}
+
 salt-master:
   pkg.installed:
     - name: {{ pkgs['salt-master'] }}

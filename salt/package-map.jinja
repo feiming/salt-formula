@@ -1,18 +1,25 @@
 {% set package_table = {
     'Debian': {'salt-master': 'salt-master',
-               'salt-minion': 'salt-minion'},
+               'salt-minion': 'salt-minion',
+               'git-python': 'python-git'},
     'Ubuntu': {'salt-master': 'salt-master',
-               'salt-minion': 'salt-minion'},
+               'salt-minion': 'salt-minion',
+               'git-python': 'python-git'},
     'CentOS': {'salt-master': 'salt-master',
-               'salt-minion': 'salt-minion'},
+               'salt-minion': 'salt-minion',
+               'git-python': 'GitPython'},
     'Fedora': {'salt-master': 'salt-master',
-               'salt-minion': 'salt-minion'},
+               'salt-minion': 'salt-minion',
+               'git-python': 'GitPython'},
     'RedHat': {'salt-master': 'salt-master',
-               'salt-minion': 'salt-minion'},
+               'salt-minion': 'salt-minion',
+               'git-python': ''},
     'Gentoo': {'salt-master': 'app-admin/salt',
-               'salt-minion': 'app-admin/salt'},
+               'salt-minion': 'app-admin/salt',
+               'git-python': ''},
     'Arch':   {'salt-master': 'salt',
-               'salt-minion':  'salt'}
+               'salt-minion':  'salt',
+               'git-python': ''}
 } %}
 
 {% if 'package_table' in pillar %}
